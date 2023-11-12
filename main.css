@@ -90,6 +90,14 @@ a {
 
 h1 {
     font-size: 120%;
+    margin-bottom: 5px;
+}
+
+#updates h2 {
+    font-size: 120%; /* Match font size with 'About me' section */
+    margin-top: 5px; /* Add space between heading and content */
+    margin: 0; /* Remove unwanted space around the heading */
+    padding: 0; /* Remove unwanted space within the heading */
 }
 
 .picture {
