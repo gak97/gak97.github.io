@@ -75,6 +75,14 @@ a {
     text-decoration: none;
 }
 
+p {
+    text-align: justify;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
 .menu a:hover {
     color: rgb(180, 180, 180);
 }
