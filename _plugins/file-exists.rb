@@ -13,8 +13,9 @@ module Jekyll
       site_source = context.registers[:site].config['source']
       file_path = site_source + '/' + url
 
-      # Check if file exists (returns true or false)
-      "#{File.exist?(file_path.strip!)}"
+      # Trim whitespace just in case and check if the file exists
+      file_path = file_path.strip
+      "#{File.exist?(file_path)}"
     end
   end
 end
