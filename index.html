@@ -1,79 +1,84 @@
-<!--
-  New personal website index page for Girish Arun Koushik.
-
-  This page is based off the layout of the former personal site and
-  displays an “About me” section along with a few recent updates.
-  The navigation bar at the top links to the other pages on the site
-  (publications, repositories, CV and chess).
-
-  All external assets such as fonts, icons and the picture are
-  referenced via CDN or their original locations in the legacy site.
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Girish Arun Koushik – About</title>
-  <!-- Google fonts and font‑awesome for icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <!-- Local stylesheet copied from the old site -->
-  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Girish Arun Koushik</title>
+  <meta name="author" content="Girish Arun Koushik">
+  <meta name="description" content="Personal webpage for Girish Arun Koushik">
+  <!-- Load the same CSS used by the al‑folio theme to preserve styling -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css">
+  <link defer rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link defer rel="stylesheet" href="/assets/css/scholar-icons.css">
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css" media="" id="highlight_theme_light">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css" media="none" id="highlight_theme_dark">
+  <script src="/assets/js/theme.js"></script>
+  <script>
+    // initialize the theme (light/dark)
+    initTheme();
+  </script>
 </head>
-<body>
-  <div class="container">
-    <div class="header">
-      Girish Arun Koushik
-    </div>
-    <!-- Navigation bar: update active class on each page accordingly -->
-    <nav class="menu">
-      <ul>
-        <li class="active" data-title="About"><a target="_self" href="index.html">About</a></li>
-        <li data-title="Publications"><a target="_self" href="publications.html">Publications</a></li>
-        <li data-title="Repositories"><a target="_self" href="repositories.html">Repositories</a></li>
-        <li data-title="CV"><a target="_self" href="cv.html">CV</a></li>
-        <li data-title="Chess"><a target="_self" href="chess.html">Chess</a></li>
-      </ul>
-      <div class="menu-line"></div>
-    </nav>
-    <div class="content">
-      <div class="picture">
-        <!-- Use the smaller profile picture from the old website.  The image is pulled
-             directly from the old repository; if you decide to host it locally
-             simply download it and replace the URL here. -->
-        <img src="https://raw.githubusercontent.com/gak97/old-gak97.github.io/main/files/girish_koushik.jpg" alt="Girish Arun Koushik" style="width: 100%; height: auto;">
+<body class="fixed-top-nav">
+  <!-- Navigation bar matching the al‑folio style but showing only relevant tabs -->
+  <header>
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+      <div class="container">
+        <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right" id="navbarNav">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item active"><a class="nav-link" href="/">about <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="/publications/">publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="/repositories/">repositories</a></li>
+            <li class="nav-item"><a class="nav-link" href="/cv/">cv</a></li>
+            <li class="nav-item"><a class="nav-link" href="/chess.html">chess</a></li>
+          </ul>
+        </div>
       </div>
-      <h1>About me</h1>
-      <p class="justify-text">I am a PhD student at the University of Surrey in the UK working on
-      <em>A Robust Multimodal Framework for Hate Speech Detection on Social Media Platforms</em>
-      under the supervision of <a href="https://www.surrey.ac.uk/people/diptesh-kanojia/">Dr. Diptesh Kanojia</a>
-      and <a href="https://www.surrey.ac.uk/people/helen-treharne">Prof. Helen Treharne</a>.</p>
-      <p class="justify-text">I received a Master’s degree in Advanced Computer Science with Artificial
-      Intelligence from the University of Strathclyde, UK in 2023.  I also have a
-      Bachelor’s degree in Electronics and Communication Engineering from the
-      RV College of Engineering in Bengaluru, India.</p>
-      <p class="justify-text">I became a Chess Grandmaster in 2019 and an International Master in 2013.
-      I have won several national and international chess tournaments.  For more
-      information, see my <a target="_self" href="chess.html">Chess</a> page.</p>
-      <p>My CV can be found <a href="https://raw.githubusercontent.com/gak97/old-gak97.github.io/main/files/Girish-Koushik-CV.pdf">here</a>.</p>
-    </div>
-    <div class="content">
-      <section id="updates">
+    </nav>
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  </header>
+
+  <!-- Main content section -->
+  <div class="container mt-5" role="main">
+    <div class="post">
+      <header class="post-header">
+        <h1 class="post-title"><span class="font-weight-bold">Girish Arun</span> Koushik</h1>
+        <p class="desc">PhD student at the University of Surrey</p>
+      </header>
+      <article>
+        <!-- Profile picture on the right using the old site’s image -->
+        <div class="profile float-right">
+          <img src="https://raw.githubusercontent.com/gak97/old-gak97.github.io/main/files/girish_koushik.jpg" class="img-fluid z-depth-1 rounded" alt="Girish Arun Koushik" width="100%" height="auto">
+        </div>
+        <div class="clearfix">
+          <p>I am a PhD student at the University of Surrey in the UK working on <em>A Robust Multimodal Framework for Hate Speech Detection on Social Media Platforms</em> under the supervision of <a href="https://www.surrey.ac.uk/people/diptesh-kanojia/">Dr.&nbsp;Diptesh Kanojia</a> and <a href="https://www.surrey.ac.uk/people/helen-treharne">Prof.&nbsp;Helen Treharne</a>.</p>
+          <p>I received a Master’s degree in Advanced Computer Science with Artificial Intelligence from the University of Strathclyde, UK in 2023 and a Bachelor’s degree in Electronics and Communication Engineering from the RV College of Engineering in Bengaluru, India.</p>
+          <p>I became a Chess Grandmaster in 2019 and an International Master in 2013. I have won several national and international chess tournaments. Learn more on the <a href="/chess.html">chess</a> page.</p>
+          <p>My CV is available <a href="https://raw.githubusercontent.com/gak97/old-gak97.github.io/main/files/Girish-Koushik-CV.pdf">here</a>.</p>
+        </div>
+        <hr>
+        <!-- Recent updates list -->
         <h2>Recent updates</h2>
         <ul>
-          <li>Our paper titled <em>Natural Language Reinforcement Learning</em> was
-          published on <a href="https://arxiv.org/pdf/2402.07157.pdf">arXiv</a> –
-          <strong>Feb 2024</strong></li>
-          <li>Participated in the CIUK 2023 Cluster Challenge representing the
-          University of Strathclyde (Team “StrathClust”) and secured third place –
-          <strong>Dec 2023</strong></li>
-          <li>Graduated MSc with Distinction from the University of Strathclyde on
-          October 30th 2023 – <strong>Oct 2023</strong></li>
-          <li>Started PhD at the University of Surrey on September 16th 2023 –
-          <strong>Sept 2023</strong></li>
+          <li>Our paper titled <em>Natural Language Reinforcement Learning</em> was published on <a href="https://arxiv.org/pdf/2402.07157.pdf">arXiv</a> &ndash; <strong>Feb 2024</strong></li>
+          <li>Participated in the CIUK 2023 Cluster Challenge representing the University of Strathclyde (Team “StrathClust”) and secured third place &ndash; <strong>Dec 2023</strong></li>
+          <li>Graduated MSc with Distinction from the University of Strathclyde on October 30th 2023 &ndash; <strong>Oct 2023</strong></li>
+          <li>Started PhD at the University of Surrey on September 16th 2023 &ndash; <strong>Sept 2023</strong></li>
         </ul>
-      </section>
+      </article>
     </div>
   </div>
 </body>
