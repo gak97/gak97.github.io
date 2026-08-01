@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - gak97
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - gak97/meme-id
+  - surrey-nlp/visual-metaphor
+  - surrey-nlp/TRACE
+  - surrey-nlp/ALOPE-RL
+  - surrey-nlp/NLP-2026
+  - surrey-nlp/Video-vs-Meme-Hate

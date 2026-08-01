@@ -29,10 +29,16 @@ My CV can be found [here](/cv/).
 
 ## Recent updates
 
-- Our Paper titled "Natural Language Reinforcement Learning" was published on arXiv - Feb 2024
-- Participated in the CIUK 2023 Cluster Challenge representing the University of Strathclyde (Team "StrathClust") and secured third place - Dec 2023
-- Graduated MSc with Distinction from the University of Strathclyde on October 30th 2023 - Oct 2023
-- Started PhD at the University of Surrey on September 16th 2023 - Sept 2023
+- Attended the AAAI 2026 in Singapore (**Jan 2026**).
+- Our paper *TRACE: Textual Relevance Augmentation and Contextual Encoding for Multimodal Hate Detection* was accepted to the AI for Social Impact (AISI) track at AAAI 2026 (**Nov 2025**).
+- Our paper *The Mind's Eye: A Multi-Faceted Reward Framework for Guiding Visual Metaphor Generation* was accepted to the GenProCC workshop at NeurIPS 2025 (**Oct 2025**).
+- Received the *Best Paper Award* at the MM4SG workshop during The Web Conference 2025 in Sydney, Australia (**Apr 2025**). See the announcement on [LinkedIn](https://www.linkedin.com/posts/girish-arun-koushik_mm4sg2025-thewebconference2025-mm4sg2025-activity-7328562686395408385-dn7c).
+- Attended The Web Conference 2025 in Sydney, Australia (**Apr 2025**).
+- Our paper *Towards a Robust Framework for Multimodal Hate Detection: A Study on Video vs. Image-based Content* was accepted to the MM4SG workshop at The Web Conference 2025 (**Jan 2025**).
+- Our paper *Natural Language Reinforcement Learning* was released on [arXiv](https://arxiv.org/abs/2411.14251) (**Feb 2024**).
+- Team "StrathClust" took third place in the CIUK 2023 Cluster Challenge representing the University of Strathclyde (**Dec 2023**).
+- Graduated with Distinction from the MSc in Advanced Computer Science with Artificial Intelligence at the University of Strathclyde (**Oct 2023**).
+- Started my PhD at the University of Surrey (**Sept 2023**).
 
 ## Contact
 
