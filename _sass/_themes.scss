@@ -15,16 +15,16 @@
   --global-footer-text-color: #{$black-color};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$black-color};
-  --global-divider-color: rgba(0,0,0,.1);
+  --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
 }
 
-html[data-theme='dark'] {
+html[data-theme="dark"] {
   --global-bg-color: #1c1c1d;
   --global-code-bg-color: #2c3237;
   --global-text-color: #e6e6e6;
-  --global-theme-color: #2698BA;
-  --global-hover-color: #2698BA;
+  --global-theme-color: #2698ba;
+  --global-hover-color: #2698ba;
   --global-hover-text-color: #fff;
   --global-footer-bg-color: #1c1c1d;
   --global-footer-text-color: #e6e6e6;

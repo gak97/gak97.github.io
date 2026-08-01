@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use "variables" as *;
 
 /******************************************************************************
  * Content
@@ -63,6 +63,7 @@ body.sticky-bottom-footer {
   a {
     margin-right: 0.5rem;
     text-decoration: none;
+  }
 
   .video-description {
     font-size: 0.9rem;
