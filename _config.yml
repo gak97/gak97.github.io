@@ -138,7 +138,6 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
-  - jekyll-terser
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
@@ -155,8 +154,7 @@ defaults:
 
 jekyll-minifier:
   exclude: ["robots.txt"]
-  uglifier_args:
-    harmony: true
+  compress_javascript: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
@@ -256,7 +254,7 @@ enable_bing_verification: false
 enable_masonry: true
 enable_math: true
 enable_tooltips: false
-enable_darkmode: true
+enable_darkmode: false
 enable_navbar_social: false
 enable_project_categories: true
 enable_medium_zoom: true
