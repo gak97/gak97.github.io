@@ -12,7 +12,6 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: chess, grandmaster, software engineer, girish koushik
-
 lang: en
 icon: ♟️
 url: https://gak97.github.io
@@ -108,14 +107,14 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter_opts:
-    css_class: 'highlight'
+    css_class: "highlight"
     span:
       line_numbers: false
     block:
       line_numbers: false
       start_line: 1
 
-include: ['_pages']
+include: ["_pages"]
 exclude:
   - bin
   - Gemfile
@@ -155,7 +154,7 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ['robots.txt']
+  exclude: ["robots.txt"]
   uglifier_args:
     harmony: true
 
@@ -168,7 +167,7 @@ jekyll-archives:
   layouts:
     year: archive-year
   permalinks:
-    year: '/blog/:year/'
+    year: "/blog/:year/"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -194,7 +193,24 @@ badges:
   altmetric_badge: true
   dimensions_badge: true
 
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
+filtered_bibtex_keywords:
+  [
+    abbr,
+    abstract,
+    arxiv,
+    bibtex_show,
+    html,
+    pdf,
+    selected,
+    supp,
+    blog,
+    code,
+    poster,
+    slides,
+    website,
+    preview,
+    altmetric,
+  ]
 
 max_author_limit: 3
 more_authors_animation_delay: 10
@@ -274,6 +290,12 @@ third_party_libraries:
     integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
     url:
       js: "https://cdn.jsdelivr.net/npm/masonry-layout@{{version}}/dist/masonry.pkgd.min.js"
+  imagesloaded:
+    version: "5.0.0"
+    integrity:
+      js: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/imagesloaded@{{version}}/imagesloaded.pkgd.min.js"
   mdb:
     version: "4.20.0"
     integrity:
